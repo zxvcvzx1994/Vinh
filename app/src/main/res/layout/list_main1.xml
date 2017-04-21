@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginTop="15px"
+    android:layout_marginLeft="15px" android:layout_marginBottom="50px" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    >
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="match_parent" android:layout_height="20px"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_marginTop="20px" android:orientation="horizontal"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:weightSum="1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+
+                    android:id="@+id/img" android:layout_marginRight="15px" android:layout_width="400px"
+                    android:adjustViewBounds="true" android:filter="true"
+                    android:layout_height="400px" />
+                <ProgressBar android:id="@+id/progress"
+
+                   android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView android:id="@+id/txtmovie"
+
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="60px" android:text="movie" />
+                <TextView android:id="@+id/txttagline" android:textSize="40px" android:layout_width="match_parent"
+                    android:text="tagline" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/txtyear" android:textSize="40px" android:layout_width="match_parent"
+                    android:text="year" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/txtduration" android:textSize="40px" android:text="duration"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:id="@+id/txtdirector" android:textSize="40px" android:text="director"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:textSize="40px"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RatingBar android:id="@+id/rating" android:layout_width="wrap_content"
+                android:layout_gravity="center" android:rating="5" android:focusable="true"
+                android:layout_height="wrap_content" />
+            <TextView android:id="@+id/txtcast" android:textSize="40px" android:text="cast"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/txtstory" android:layout_marginBottom="20px" android:text="story"
+                android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
